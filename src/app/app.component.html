@@ -1,27 +1,16 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <form>
-        <div id="user-data">
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" class="form-control">
-          </div>
-          <button class="btn btn-default" type="button">Suggest an Username</button>
-          <div class="form-group">
-            <label for="email">Mail</label>
-            <input type="email" id="email" class="form-control">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="secret">Secret Questions</label>
-          <select id="secret" class="form-control">
-            <option value="pet">Your first Pet?</option>
-            <option value="teacher">Your first teacher?</option>
-          </select>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
+
+<h1 style="text-align: center"> Welcome to the form Approach examples </h1>
+
+<div style="margin: 30px auto" align="center" class="control-label">
+  <button routerLinkActive="active" routerLink="/templatedriven" class=" btn btn-primary">
+    Template driven example
+  </button>
+
+  <button style="margin-left: 20px" routerLinkActive="active" routerLink="/reactive" class=" btn btn-primary">
+    Reactive example
+  </button>
+
 </div>
+
+<router-outlet></router-outlet>
+
